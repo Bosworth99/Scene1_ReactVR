@@ -4,13 +4,20 @@ import {
     View,
 } from 'react-vr';
 //
-import App from './src/app/App.jsx';
+import App from './src/app/App';
 
 export default class Scene1 extends React.Component {
+    
+    constructor(props) {
+        super(props);
+
+        console.log('Scene1.constructor',);
+    }
+
     render() {
         return (
-            <View id={'Scene1'}>
-                <App version={'0.1.0'}/>
+            <View>
+               <App version={'0.1.0'} />
             </View>
         );
     }

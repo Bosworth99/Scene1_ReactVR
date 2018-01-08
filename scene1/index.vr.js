@@ -1,26 +1,34 @@
 import React from 'react';
 import {
-    AppRegistry,
-    View,
+  AppRegistry,
+  asset,
+  Pano,
+  Text,
+  View,
 } from 'react-vr';
-//
-import App from './src/app/App';
 
-export default class Scene1 extends React.Component {
-    
-    constructor(props) {
-        super(props);
-
-        console.log('Scene1.constructor',);
-    }
-
-    render() {
-        return (
-            <View>
-               <App version={'0.1.0'} />
-            </View>
-        );
-    }
+export default class scene1 extends React.Component {
+  render() {
+    return (
+      <View>
+        <Pano source={asset('chess-world.jpg')}/>
+        <Text
+          style={{
+            backgroundColor: '#777879',
+            fontSize: 0.8,
+            fontWeight: '400',
+            layoutOrigin: [0.5, 0.5],
+            paddingLeft: 0.2,
+            paddingRight: 0.2,
+            textAlign: 'center',
+            textAlignVertical: 'center',
+            transform: [{translate: [0, 0, -3]}],
+          }}>
+          hello
+        </Text>
+      </View>
+    );
+  }
 };
 
-AppRegistry.registerComponent('Scene1', () => Scene1);
+AppRegistry.registerComponent('scene1', () => scene1);

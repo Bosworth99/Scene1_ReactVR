@@ -1,0 +1,22 @@
+{
+  "name": "scene1_reactvr",
+  "version": "0.1.0",
+  "description": "React VR test",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://Bosworth99@github.com/Bosworth99/Scene1_ReactVR.git"
+  },
+  "keywords": [
+    "reactVR"
+  ],
+  "author": "josh@joshbosworth.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bosworth99/Scene1_ReactVR/issues"
+  },
+  "homepage": "https://github.com/Bosworth99/Scene1_ReactVR#readme"
+}
